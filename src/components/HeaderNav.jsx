@@ -1,11 +1,10 @@
 import Container from "@mui/material/Container"
 import AppBar from "@mui/material/AppBar"
-import { Link as LinkBase, Toolbar, Box } from "@mui/material"
+import { Link as LinkBase, Box } from "@mui/material"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Grid from '@mui/material/Grid2'
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from "react-router-dom";
 import AnchorTemporaryDrawer from "./MenuDrawer";
 
@@ -23,16 +22,15 @@ export default function Header() {
                         alignContent: 'center'
                     }}>
                         <Box sx={{ color: 'white'}}>
-                        <IconButton
+                        <Box 
                         size="large"
                         aria-label="account of current user"
                         aria-controls="menu-appbar"
                         aria-haspopup="true"
                         color="inherit"
-                        sx={{ display: { xs: 'flex', md: 'none' }, mr: 0 }}
-                        >
-                        <AnchorTemporaryDrawer />    
-                        </IconButton>
+                        sx={{ display: { xs: 'flex', md: 'none' }, mr: 0 , padding: '5px'}}>
+                        <AnchorTemporaryDrawer />  
+                        </Box>
                         <LinkBase component={Link} to="/"
                         sx={{ display: { xs: 'none', md: 'flex'}, fontWeight: 'bold', textDecoration: 'none', color: 'rgba(161, 204, 165, 1)', textShadow: '1px 1px 2px black'}}
                         >
@@ -68,7 +66,7 @@ export default function Header() {
                             
                         </Box>
                         <LinkBase component={Link} to="/"
-                        sx={{ display: { xs: 'flex', md: 'none'}, fontWeight: 'bold'}}>
+                        sx={{ display: { xs: 'flex', md: 'none'}, fontWeight: 'bold', color: 'rgba(161, 204, 165, 1)', textDecoration: 'none', textShadow: '1px 1px 2px black'}}>
                             aadak.dev
                         </LinkBase>
                     </Grid>

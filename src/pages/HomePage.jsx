@@ -21,13 +21,13 @@ export default function Home() {
                         alignContent={'center'}
                         width={'50%'}
                         padding={"1em"}
+                        sx={{ display: { xs: 'none', lg: 'block', xl: 'block' } }}
                     >
                         <img 
                         src="/landing.jpg"
                         height={"100%"}
                         width={"100%"}
                         style={{borderRadius:'10%', transform: 'scaleX(-1)'}}
-                        
                         />
                     </Box>
                     <Box

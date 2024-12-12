@@ -2,8 +2,6 @@ import Container from '@mui/material/Container'
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link
 } from 'react-router-dom';
 import Home from './pages/HomePage';
 import Story from './pages/StoryPage';
