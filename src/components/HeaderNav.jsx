@@ -4,11 +4,17 @@ import { Link as LinkBase, Box } from "@mui/material"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Grid from '@mui/material/Grid2'
-import IconButton from '@mui/material/IconButton';
 import { Link } from "react-router-dom";
 import AnchorTemporaryDrawer from "./MenuDrawer";
 
 export default function Header() {
+    const linkStyle = {
+        fontWeight: 'bold',
+        textDecoration: 'none',
+        color: 'rgba(161, 204, 165, 1)',
+        textShadow: '1px 1px 2px black',
+    };
+
     return (
         <AppBar position="static" sx={{ bgcolor: 'rgba(65, 93, 67, .75)', padding: '0px', borderRadius: '20px', height: '50px'}}>
             <Container maxWidth='lg'>
@@ -32,7 +38,7 @@ export default function Header() {
                         <AnchorTemporaryDrawer />  
                         </Box>
                         <LinkBase component={Link} to="/"
-                        sx={{ display: { xs: 'none', md: 'flex'}, fontWeight: 'bold', textDecoration: 'none', color: 'rgba(161, 204, 165, 1)', textShadow: '1px 1px 2px black'}}
+                        sx={{ display: { xs: 'none', md: 'flex'}, fontWeight: 'bold', textDecoration: 'none', ...linkStyle}}
                         >
                             aadak.dev
                         </LinkBase>
@@ -51,22 +57,22 @@ export default function Header() {
                                 gap: '2em',
                             }}>
                             <LinkBase component={Link} to="/story"
-                            sx={{ display: { xs: 'none', md: 'flex'}, fontWeight: 'bold', textDecoration: 'none', color: 'rgba(161, 204, 165, 1)', textShadow: '1px 1px 2px black'}}>
+                            sx={{ display: { xs: 'none', md: 'flex'}, fontWeight: 'bold', textDecoration: 'none', ...linkStyle}}>
                                 Story
                             </LinkBase>
                             <LinkBase component={Link} to="/projects"
-                            sx={{ display: { xs: 'none', md: 'flex'}, fontWeight: 'bold', textDecoration: 'none', color: 'rgba(161, 204, 165, 1)', textShadow: '1px 1px 2px black'}}>
+                            sx={{ display: { xs: 'none', md: 'flex'}, fontWeight: 'bold', textDecoration: 'none', ...linkStyle}}>
                                 Projects
                             </LinkBase>
                             <LinkBase component={Link} to="/contact"
-                            sx={{ display: { xs: 'none', md: 'flex'}, fontWeight: 'bold', textDecoration: 'none', color: 'rgba(161, 204, 165, 1)', textShadow: '1px 1px 2px black'}}>
+                            sx={{ display: { xs: 'none', md: 'flex'}, fontWeight: 'bold', textDecoration: 'none', ...linkStyle}}>
                                 Contact
                             </LinkBase>
                             
                             
                         </Box>
                         <LinkBase component={Link} to="/"
-                        sx={{ display: { xs: 'flex', md: 'none'}, fontWeight: 'bold', color: 'rgba(161, 204, 165, 1)', textDecoration: 'none', textShadow: '1px 1px 2px black'}}>
+                        sx={{ display: { xs: 'flex', md: 'none'}, fontWeight: 'bold', ...linkStyle, textDecoration: 'none'}}>
                             aadak.dev
                         </LinkBase>
                     </Grid>
@@ -77,19 +83,20 @@ export default function Header() {
                             paddingTop: '.5em',
                             gap: '1em',
                         }}>
-                                <LinkBase component={Link} to={"https://github.com/aadak99"}
+                                <LinkBase 
+                                    href="https://github.com/aadak99"
                                     target="_blank" rel="noopener"
                                     underline="none"
                                     sx={{
-                                        color: 'rgba(161, 204, 165, 1)',
+                                        ...linkStyle
                                     }}
                                     ><GitHubIcon sx={{ fontSize: 30 }}/></LinkBase>
                                 <LinkBase 
-                                    component={Link} to={"https://www.linkedin.com/in/aadak44/"}
+                                    href="https://www.linkedin.com/in/aadak44/"
                                     target="_blank" rel="noopener"
                                     underline="none"
                                     sx={{
-                                        color: 'rgba(161, 204, 165, 1)'
+                                        ...linkStyle
                                     }}
                                     ><LinkedInIcon fontSize="large"/></LinkBase>
                         </Grid>
