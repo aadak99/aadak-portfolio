@@ -19,7 +19,8 @@ function ResponsiveAppBar() {
     >
       <Container maxWidth='lg'
       sx={{
-        height: '50px'
+        height: '50px',
+
       }}
       >
         <Toolbar disableGutters 
