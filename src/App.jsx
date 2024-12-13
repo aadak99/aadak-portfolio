@@ -1,8 +1,5 @@
-import Container from '@mui/material/Container'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from 'react-router-dom';
+import Container from '@mui/material/Container';
+import { HashRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/HomePage';
 import Story from './pages/StoryPage';
 import Project from './pages/ProjectPage';
@@ -11,7 +8,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from '@mui/material';
 
 function App() {
-  
   const theme = createTheme({
     components: {
       MuiCssBaseline: {
@@ -28,36 +24,21 @@ function App() {
     },
   });
 
-
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />
-    },
-    {
-      path: "/story",
-      element: <Story />
-    },
-    {
-      path: "/projects",
-      element: <Project />
-    },
-    {
-      path: "/contact",
-      element: <Contact />
-    },
-  ])
-  
-  
-
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Container maxWidth='lg' sx={{bgcolor: '#111D13'}}>
-        <RouterProvider router={router} />
-      </Container>
+      <HashRouter basename="/">
+        <Container maxWidth='lg' sx={{bgcolor: '#111D13'}}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/story" element={<Story />} />
+            <Route path="/projects" element={<Project />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Container>
+      </HashRouter>
     </ThemeProvider>
-  )
-};
+  );
+}
 
-export default App
+export default App;

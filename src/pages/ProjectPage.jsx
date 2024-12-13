@@ -1,31 +1,32 @@
 import Header from "../components/HeaderNav"
-import { Box, Divider } from "@mui/material";
-import Stack from '@mui/material/Stack';
+import { Box } from "@mui/material";
+import MultipleItems from "../components/ProjectCarousel";
 
 export default function Project() {
     return (
         <>
             <Box height={'10px'}></Box>
             <Header />
-            <Stack
-                direction= "row"
-                spacing={2}
-                height={'calc(100vh - 60px)'}
-                justifyContent={'center'}
-                alignItems={'center'}
-                width={'100%'}
-                >
-                    <Box 
-                        display={'flex'}
-                        justifyContent={'center'}
-                        alignContent={'center'}
-                        width={'50%'}
-                        padding={"1em"}
-                        color={'#709775'}
-                    >
-                        Project
-                    </Box>
-            </Stack>
+            <Box
+            height={'calc(100vh - 60px)'}
+            justifyContent={'center'}
+            alignContent={'center'}
+            >
+            <Box 
+            height={'50%'}
+
+            display={'flex'}
+            flexDirection={'column'}
+            alignContent={'center'}
+            justifyContent={'center'}
+            width={'50%'}
+            margin={'auto'}
+            >
+            <MultipleItems />  
+            </Box>
+            </Box>
+            
+                 
         </>
     )
 }

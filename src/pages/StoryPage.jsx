@@ -21,7 +21,7 @@ export default function Story() {
                         alignContent={'center'}
                         width={'50%'}
                         padding={"1em"}
-                        color={'#709775'}
+                        color={'rgba(161, 204, 165, 1)'}
                     >
                         Story
                     </Box>
