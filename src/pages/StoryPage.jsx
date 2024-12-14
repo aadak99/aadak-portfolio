@@ -1,5 +1,5 @@
 import Header from "../components/HeaderNav"
-import { Box, Divider } from "@mui/material";
+import { Box, Divider, Card } from "@mui/material";
 import Stack from '@mui/material/Stack';
 import { Link as LinkBase} from "@mui/material"
 
@@ -27,20 +27,17 @@ export default function Story() {
                     bgcolor={'green'}
                     justifyContent={'center'}
                     alignContent={'center'}
+
+                    sx={{ display: { xs: 'none', md: 'none', lg: 'none', xl: 'block'}}}
                     >
-                    
                     <LazyLoad />
                     </Box>
                 
                 </div>
                 <div>
-                <Box    
+                <Card 
                 margin={'auto'}
-                        width={'50%'}
-                        padding={"1em"}
-                        color={'rgba(161, 204, 165, 1)'}
-                    >   
-
+                sx={{ minHeight: '40vh', overflow: 'auto', color: 'rgba(161, 204, 165, 1)', bgcolor: '#111D13', width: '450px'}}>
                         <span>
                         <p>Hi, I’m Alex Adak. I grew up in South Florida with Turkish immigrant parents, and like many, I was expected to become a doctor. 
                             But over time, I realized my true passion was in tech. <br></br><br></br>The turning point came when I tore my ACL playing volleyball. 
@@ -55,7 +52,7 @@ export default function Story() {
                                     >LinkedIn!</LinkBase>
                         </p>
                         </span>
-                    </Box>
+                    </Card>
                 </div>
             </Stack>
         </>
