@@ -16,6 +16,13 @@ function MultipleItems() {
     <div className="slider-container">
       <Slider {...settings}>
         <div >
+          <Box 
+            color={'rgba(161, 204, 165, 1)'}
+            textAlign={'center'}
+            fontSize={'22px'}
+          >
+            Nucamp Grounds - Reactjs
+          </Box>
         <Box
           bgcolor={'teal'}
           height={'400px'}
@@ -24,7 +31,8 @@ function MultipleItems() {
           alignContent={'center'}
           borderRadius={'5px'}
           sx={{
-            backgroundImage: 'url("/NucampGrounds.jpg")'
+            backgroundImage: 'url("/NucampGrounds.jpg")',
+            opacity: '.75'
           }}
           >
             <Button
@@ -38,6 +46,13 @@ function MultipleItems() {
           </Box>
         </div>
         <div>
+          <Box 
+            color={'rgba(161, 204, 165, 1)'}
+            textAlign={'center'}
+            fontSize={'22px'}
+          >
+            Nucamp Grounds - React Native
+          </Box>
           <Box
           bgcolor={'gray'}
           height={'400px'}
@@ -54,11 +69,18 @@ function MultipleItems() {
               color: 'black'
             }}
             >
-              Test 2
+              
               </Button>
           </Box>
         </div>
         <div>
+        <Box 
+            color={'rgba(161, 204, 165, 1)'}
+            textAlign={'center'}
+            fontSize={'22px'}
+          >
+            Test 3
+          </Box>
         <Box
           bgcolor={'black'}
           height={'400px'}
@@ -74,7 +96,7 @@ function MultipleItems() {
               color: 'red'
             }}
             >
-              Test 3
+              
               </Button>
           </Box>
         </div>

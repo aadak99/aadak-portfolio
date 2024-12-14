@@ -64,12 +64,7 @@ export default function Header() {
                             sx={{ display: { xs: 'none', md: 'flex'}, fontWeight: 'bold', textDecoration: 'none', ...linkStyle}}>
                                 Projects
                             </LinkBase>
-                            <LinkBase component={Link} to="/contact"
-                            sx={{ display: { xs: 'none', md: 'flex'}, fontWeight: 'bold', textDecoration: 'none', ...linkStyle}}>
-                                Contact
-                            </LinkBase>
-                            
-                            
+
                         </Box>
                         <LinkBase component={Link} to="/"
                         sx={{ display: { xs: 'flex', md: 'none'}, fontWeight: 'bold', ...linkStyle, textDecoration: 'none'}}>
