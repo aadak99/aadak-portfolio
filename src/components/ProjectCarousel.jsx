@@ -50,6 +50,7 @@ function MultipleItems() {
             color={'rgba(161, 204, 165, 1)'}
             textAlign={'center'}
             fontSize={'22px'}
+            
           >
             Nucamp Grounds - React Native
           </Box>
@@ -60,6 +61,10 @@ function MultipleItems() {
           justifyContent={'center'}
           alignContent={'center'}
           borderRadius={'5px'}
+          sx={{
+            backgroundImage: 'url("/development.jpg")',
+            opacity: '.75'
+          }}
           >
             <Button
             h
@@ -79,7 +84,7 @@ function MultipleItems() {
             textAlign={'center'}
             fontSize={'22px'}
           >
-            Test 3
+            Dive Florida
           </Box>
         <Box
           bgcolor={'black'}
@@ -88,7 +93,12 @@ function MultipleItems() {
           justifyContent={'center'}
           alignContent={'center'}
           borderRadius={'5px'}
+          sx={{
+            backgroundImage: 'url("/development.jpg")',
+            opacity: '.75'
+          }}
           >
+            
             <Button
             sx={{
               height: '400px',

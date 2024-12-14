@@ -45,7 +45,7 @@ export default function Home() {
                             <span style={{ color: '' }}>for Your Users</span>
                         </h1>
                         
-                        <p>Passionate developer who loves building websites that are fast, user/ADA friendly, and reliable. I have education in the MERN stack (MongoDB, Express, React, Node.js), though I am open to learning what fits your team. I am all about making technology work for people in a simple and effective manner. </p>
+                        <p>Passionate developer who loves building websites that are fast, user friendly, and reliable. I have education in the MERN stack (MongoDB, Express, React, Node.js), though I am open to learning what fits your team. I am all about making technology work for people in a simple and effective manner. </p>
                         <p>Learn more <LinkBase component={Link} to="/story" sx={{textDecoration: 'none', color: 'orange'}}>here!</LinkBase></p>
                         <Divider sx={{bgcolor: '#709775'}}/>
                         <h2>Explore My <LinkBase component={Link} to="/projects" sx={{textDecoration: 'none', color: 'orange'}}>Work</LinkBase></h2>
