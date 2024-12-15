@@ -23,7 +23,7 @@ function MultipleItems() {
           >
             Nucamp Grounds - Reactjs
           </Box>
-        <Link target="_blank" href="" rel="noreferrer" sx={{ bgcolor: 'red'}}>
+        <Link target="_blank" href="https://nugrounds.netlify.app/" rel="noreferrer" sx={{ bgcolor: 'red'}}>
         <Box
           height={'400px'}
           borderRadius={'5px'}
@@ -51,7 +51,7 @@ function MultipleItems() {
               backgroundImage: 'url("/DiveFlorida.jpg")',
               opacity: '.75'
             }}
-            >
+            > 
             </Box>
           </Link>
         </div>
@@ -63,29 +63,17 @@ function MultipleItems() {
           >
             PlaceHolder
           </Box>
+        <Link target="_blank" href="" rel="noopener" sx={{ bgcolor: 'red'}}>
         <Box
-          bgcolor={'black'}
           height={'400px'}
-          textAlign={'center'}
-          justifyContent={'center'}
-          alignContent={'center'}
           borderRadius={'5px'}
           sx={{
             backgroundImage: 'url("/development.jpg")',
             opacity: '.75'
           }}
           >
-            
-            <Button
-            sx={{
-              height: '400px',
-              width: '576px',
-              color: 'red'
-            }}
-            >
-              
-              </Button>
-          </Box>
+        </Box>
+        </Link>
         </div>
       </Slider>
     </div>
