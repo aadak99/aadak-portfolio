@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import { Box } from "@mui/material";
+import { Box, Link } from "@mui/material";
 import { Button } from "@mui/material";
 
 
@@ -23,60 +23,37 @@ function MultipleItems() {
           >
             Nucamp Grounds - Reactjs
           </Box>
+        <Link target="_blank" href="" rel="noreferrer" sx={{ bgcolor: 'red'}}>
         <Box
-          bgcolor={'teal'}
           height={'400px'}
-          textAlign={'center'}
-          justifyContent={'center'}
-          alignContent={'center'}
           borderRadius={'5px'}
           sx={{
             backgroundImage: 'url("/NucampGrounds.jpg")',
             opacity: '.75'
           }}
-          >
-            <Button
-            sx={{
-              height: '400px',
-              width: '576px'
-            }}
-            >
-
-              </Button>
-          </Box>
+          />
+          </Link>
         </div>
         <div>
           <Box 
             color={'rgba(161, 204, 165, 1)'}
             textAlign={'center'}
             fontSize={'22px'}
-            
+
           >
-            Nucamp Grounds - React Native
+            DiveFlorida - HTML, CSS, Js
           </Box>
-          <Box
-          bgcolor={'gray'}
-          height={'400px'}
-          textAlign={'center'}
-          justifyContent={'center'}
-          alignContent={'center'}
-          borderRadius={'5px'}
-          sx={{
-            backgroundImage: 'url("/development.jpg")',
-            opacity: '.75'
-          }}
-          >
-            <Button
-            h
+          <Link target="_blank" href="https://diveflorida.netlify.app/" rel="noopener" sx={{ bgcolor: 'red'}}>
+            <Box
+            height={'400px'}
+            borderRadius={'5px'}
             sx={{
-              height: '400px',
-              width: '576px',
-              color: 'black'
+              backgroundImage: 'url("/DiveFlorida.jpg")',
+              opacity: '.75'
             }}
             >
-              
-              </Button>
-          </Box>
+            </Box>
+          </Link>
         </div>
         <div>
         <Box 
@@ -84,7 +61,7 @@ function MultipleItems() {
             textAlign={'center'}
             fontSize={'22px'}
           >
-            Dive Florida
+            PlaceHolder
           </Box>
         <Box
           bgcolor={'black'}
