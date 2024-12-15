@@ -7,9 +7,13 @@ function MultipleItems() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    fade: true,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 7000,
+    cssEase: "linear"
   };
   
   return (
