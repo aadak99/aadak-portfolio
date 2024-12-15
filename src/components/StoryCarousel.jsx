@@ -3,12 +3,14 @@ import Slider from "react-slick";
 function LazyLoad() {
   const settings = {
     dots: true,
-    lazyLoad: true,
     infinite: true,
-    speed: 500,
+    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    initialSlide: 2
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 5000,
+    cssEase: "linear"
   };
   return (
     <div className="slider-container">
