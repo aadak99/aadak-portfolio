@@ -16,16 +16,40 @@ function LazyLoad() {
     <div className="slider-container">
       <Slider {...settings}>
         <div>
-          <img src={"/profile2.jpg"}/>
+          <img 
+            
+            height={"100%"}
+            width={"100%"}
+            style={{borderRadius:'10%', transform: 'scaleX(-1)'}}
+            src="/profile4.jpg"/>
+          </div>
+        <div>
+          <img 
+          height={"100%"}
+          width={"100%"}
+          style={{borderRadius:'10%', transform: 'scaleX(-1)'}}
+          src={"/profile2.jpg"}/>
         </div>
         <div>
-          <img src={"/profile3.jpg"} />
+          <img 
+          height={"100%"}
+          width={"100%"}
+          style={{borderRadius:'10%', transform: 'scaleX(-1)'}}
+          src={"/profile3.jpg"} />
         </div>
         <div>
-          <img src={"/profile1.jpg"} />
+          <img 
+          height={"100%"}
+          width={"100%"}
+          style={{borderRadius:'10%', transform: 'scaleX(-1)'}}
+          src={"/profile1.jpg"} />
         </div>
         <div>
-          <img src={"/profile4.jpg"} />
+          <img 
+          height={"100%"}
+          width={"100%"}
+          style={{borderRadius:'10%', transform: 'scaleX(-1)'}}
+          src={"/profile5.jpg"} />
         </div>
       </Slider>
     </div>

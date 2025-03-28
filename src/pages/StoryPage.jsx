@@ -13,7 +13,7 @@ export default function Story() {
             <Stack
             direction="column"
             divider={<Divider orientation="vertical" flexItem />}
-            spacing={2}
+            spacing={6}
             height={'calc(100vh - 60px)'}
             justifyContent={'center'}
             alignItems={'center'}
@@ -22,8 +22,8 @@ export default function Story() {
                 <div>
                     <Box
                     textAlign={'center'}
-                    height={'350px'}
-                    width={'350px'}
+                    height={'500px'}
+                    width={'550px'}
                     bgcolor={'green'}
                     justifyContent={'center'}
                     alignContent={'center'}

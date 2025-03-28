@@ -13,7 +13,7 @@ export default function Project() {
                 alignContent={'center'}
                 >
                     <Box 
-                    height={'50%'}
+                    height={'auto'}
 
                     display={'flex'}
                     flexDirection={'column'}

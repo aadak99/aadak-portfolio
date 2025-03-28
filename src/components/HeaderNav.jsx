@@ -56,14 +56,7 @@ export default function Header() {
                                 alignContent: 'center',
                                 gap: '2em',
                             }}>
-                            <LinkBase component={Link} to="/story"
-                            sx={{ display: { xs: 'none', md: 'flex'}, fontWeight: 'bold', textDecoration: 'none', ...linkStyle}}>
-                                Story
-                            </LinkBase>
-                            <LinkBase component={Link} to="/projects"
-                            sx={{ display: { xs: 'none', md: 'flex'}, fontWeight: 'bold', textDecoration: 'none', ...linkStyle}}>
-                                Projects
-                            </LinkBase>
+                            
 
                         </Box>
                         <LinkBase component={Link} to="/"
@@ -108,4 +101,15 @@ Original
                         <Link sx={{ color: '#E9C46A', textDecoration: 'none', fontWeight: 'medium'}}>Story</Link>
                         <Link sx={{ color: '#E9C46A', textDecoration: 'none', fontWeight: 'medium'}}>Projects</Link>
                         <Link sx={{ color: '#E9C46A', textDecoration: 'none', fontWeight: 'medium'}}>Contact</Link>
+
+                        <LinkBase component={Link} to="/projects"
+                            sx={{ display: { xs: 'none', md: 'flex'}, fontWeight: 'bold', textDecoration: 'none', ...linkStyle}}>
+                                Projects
+                            </LinkBase>
+
+
+                        <LinkBase component={Link} to="/story"
+                            sx={{ display: { xs: 'none', md: 'flex'}, fontWeight: 'bold', textDecoration: 'none', ...linkStyle}}>
+                                Story
+                        </LinkBase>
 */

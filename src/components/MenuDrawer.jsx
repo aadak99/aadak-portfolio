@@ -37,7 +37,7 @@ export default function AnchorTemporaryDrawer() {
       justifyContent={'center'}
     >
       <List>
-        {['Story', 'Projects'].map((text, index) => (
+        {['Projects'].map((text, index) => (
             <ListItem key={text} disablePadding>
             <ListItemButton component={Link} to={`/${text.toLowerCase()}`}>
               <ListItemIcon>
